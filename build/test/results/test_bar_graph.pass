@@ -1,0 +1,16 @@
+---
+:source:
+  :path: test
+  :file: test_bar_graph.c
+:successes:
+- :test: test_bar_graph_0_percent_all_off
+  :line: 14
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 1
+  :passed: 1
+  :failed: 0
+  :ignored: 0
+:stdout: []
