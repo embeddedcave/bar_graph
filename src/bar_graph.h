@@ -9,6 +9,6 @@ void bar_graph_set_percent(uint8_t percent);
 
 // left iff at half way pointof instuctional video.
 
-// more testinggit 
+// more testinggit
 
 #endif // _BAR_GRAPH_H
