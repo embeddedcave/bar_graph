@@ -16,13 +16,3 @@ void tearDown(void)
 {
 
 }
-
-
-
-void test_led_NeedToImplement(void)
-
-{
-
-    UnityIgnore( (("Need to Implement led")), (UNITY_UINT)(14));
-
-}

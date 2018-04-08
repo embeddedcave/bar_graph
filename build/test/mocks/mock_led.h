@@ -27,6 +27,12 @@ void led_turn_off_CMockIgnore(void);
 void led_turn_off_CMockExpect(UNITY_LINE_TYPE cmock_line, uint8_t index);
 typedef void (* CMOCK_led_turn_off_CALLBACK)(uint8_t index, int cmock_num_calls);
 void led_turn_off_StubWithCallback(CMOCK_led_turn_off_CALLBACK Callback);
+#define led_turn_on_Ignore() led_turn_on_CMockIgnore()
+void led_turn_on_CMockIgnore(void);
+#define led_turn_on_Expect(index) led_turn_on_CMockExpect(__LINE__, index)
+void led_turn_on_CMockExpect(UNITY_LINE_TYPE cmock_line, uint8_t index);
+typedef void (* CMOCK_led_turn_on_CALLBACK)(uint8_t index, int cmock_num_calls);
+void led_turn_on_StubWithCallback(CMOCK_led_turn_on_CALLBACK Callback);
 
 #if defined(__GNUC__) && !defined(__ICC) && !defined(__TMS470__)
 #pragma GCC diagnostic pop

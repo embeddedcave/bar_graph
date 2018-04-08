@@ -37,6 +37,10 @@ char* GlobalOrderError;
 extern void setUp(void);
 extern void tearDown(void);
 extern void test_bar_graph_0_percent_all_off(void);
+extern void test_bar_graph_100_percent_all_on(void);
+extern void test_bar_graph_25_percent_one_on(void);
+extern void test_bar_graph_26_percent_one_on(void);
+extern void test_bar_graph_50_percent_two_on(void);
 
 
 /*=======Mock Management=====*/
@@ -73,6 +77,10 @@ int main(void)
 {
   UnityBegin("test_bar_graph.c");
   RUN_TEST(test_bar_graph_0_percent_all_off, 14);
+  RUN_TEST(test_bar_graph_100_percent_all_on, 24);
+  RUN_TEST(test_bar_graph_25_percent_one_on, 35);
+  RUN_TEST(test_bar_graph_26_percent_one_on, 45);
+  RUN_TEST(test_bar_graph_50_percent_two_on, 55);
 
   CMock_Guts_MemFreeFinal();
   return (UnityEnd());

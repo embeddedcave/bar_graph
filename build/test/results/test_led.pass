@@ -4,13 +4,10 @@
   :file: test_led.c
 :successes: []
 :failures: []
-:ignores:
-- :test: test_led_NeedToImplement
-  :line: 14
-  :message: Need to Implement led
+:ignores: []
 :counts:
-  :total: 1
+  :total: 0
   :passed: 0
   :failed: 0
-  :ignored: 1
+  :ignored: 0
 :stdout: []
